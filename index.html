@@ -2,15 +2,100 @@
 <html>
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Odin Recipes</title>
     <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f2f2f2;
+      }
       h1 {
         text-align: center;
+        padding: 30px;
+        background-color: #333;
+        color: #fff;
+        font-size: 36px;
+      }
+      .recipe-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 30px;
+      }
+      .recipe {
+        width: 300px;
+        margin: 20px;
+        text-align: center;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        overflow: hidden;
+      }
+      img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        margin-bottom: 10px;
+      }
+      h2 {
+        font-size: 24px;
+        padding: 20px;
+      }
+      p {
+        font-size: 16px;
+        padding: 20px;
+        text-align: left;
+      }
+      @media (max-width: 768px) {
+        .recipe {
+          width: 100%;
+        }
       }
     </style>
-    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <h1>Odin Recipes</h1>
+    <div class="recipe-container">
+      <div class="recipe">
+        <img
+          src="https://images.unsplash.com/photo-1559586937-3f1c07b1634c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+          alt="Spaghetti Carbonara"
+        />
+        <h2><a href="spaghetti.html">Spaghetti Carbonara</a></h2>
+        <p>
+          Ingredients: spaghetti, eggs, pancetta, parmesan cheese, black pepper
+        </p>
+      </div>
+      <ul>
+        <li><a href="spaghetti_carbonara.html">Spaghetti Carbonara</a></li>
+        <li><a href="chicken_tacos.html">Chicken Tacos</a></li>
+        <li><a href="vegetable_stir_fry.html">Vegetable Stir Fry</a></li>
+      </ul>
+      <div class="recipe">
+        <img
+          src="https://images.unsplash.com/photo-1506354666786-959d6d497f1a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+          alt="Roasted Chicken"
+        />
+        <h2>Roasted Chicken</h2>
+        <p>
+          Ingredients: chicken, olive oil, salt, black pepper, thyme, garlic
+        </p>
+      </div>
+      <div class="recipe">
+        <img
+          src="https://images.unsplash.com/photo-1565299624941-b28f40dcffce?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+          alt="Stir-Fried Vegetables"
+        />
+        <h2>Stir-Fried Vegetables</h2>
+        <p>
+          Ingredients: mixed vegetables, soy sauce, ginger, garlic, sesame oil
+        </p>
+      </div>
+    </div>
   </body>
 </html>
